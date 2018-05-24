@@ -1767,18 +1767,18 @@ def bot(op):
                 url = msg.contentMetadata["postEndUrl"]
                 cl.like(url[25:58], url[66:], likeType=1001)
 #-----------------------------------------------
-        if op.type == 17:
-            group = cl.getGroup(op.param1)
-            cb = Message()
-            cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName +"\n􀔃􀄜shiny􏿿ยินต้อนรับเข้าสู่กลุ่ม􀔃􀄜shiny􏿿\n􀔃􀅕red arrow right􏿿"+group.name
-            cl.sendMessage(cb)
-        if op.type == 15:
-            group = cl.getGroup(op.param1)
-            cb = Message()
-            cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName + "\n􀄃􀆃frozen􏿿ไม่น่าเลยยย ไปซะเเล้วววว􀄃􀆃frozen􏿿"
-            cl.sendMessage(cb)
+  #     if op.type == 17:
+  #          group = cl.getGroup(op.param1)
+  #          cb = Message()
+  #          cb.to = op.param1
+  #          cb.text = cl.getContact(op.param2).displayName +"\n􀔃􀄜shiny􏿿ยินต้อนรับเข้าสู่กลุ่ม􀔃􀄜shiny􏿿\n􀔃􀅕red arrow right􏿿"+group.name
+  #          cl.sendMessage(cb)
+  #      if op.type == 15:
+  #          group = cl.getGroup(op.param1)
+  #          cb = Message()
+  #          cb.to = op.param1
+  #          cb.text = cl.getContact(op.param2).displayName + "\n􀄃􀆃frozen􏿿ไม่น่าเลยยย ไปซะเเล้วววว􀄃􀆃frozen􏿿"
+  #          cl.sendMessage(cb)
 #------------------------------------------------------------------------------------
         if op.type == 26:
             msg = op.message
